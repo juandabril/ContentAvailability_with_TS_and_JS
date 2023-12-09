@@ -55,10 +55,6 @@ describe('calculateAvailableContent', () => {
       contentType: 'digitalasset',
       formatType: 'video',
     };
-  
-    const currentTimestamp = new Date('2022-03-15');
-    
-    
     const availableContent = calculateAvailableContent(levels, options);
 
     expect(availableContent.size).toBe(4);
